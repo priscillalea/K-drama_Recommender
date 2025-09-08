@@ -215,7 +215,8 @@ If `Platform` is missing, the backend creates an empty column to avoid errors.
 ## Maintainer
 
 **Priscilla Leandro** — Software Engineering student (2nd semester)
-Focus areas: HTML/CSS/JS, Python, and practical ML applications.
+Focus areas: Data Science with Python and practical ML applications.
+Other languages abilities: HTML, CSS, JavaScript
 
 ---
 
