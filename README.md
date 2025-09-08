@@ -97,10 +97,6 @@ python app.py
 cd static
 python -m http.server 5500
 
-# Option B (Node, if installed)
-npx serve static
-```
-
 If you serve on a different origin/port, update the fetch URL in `static/script.js`.
 
 ## Usage
