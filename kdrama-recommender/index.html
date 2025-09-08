@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Drama Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>K-Drama Recommender</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="scrollToLanding()" class="nav-link">Home</a></li>
+                <li><a href="#" onclick="scrollToRecommendations()" class="nav-link">Recomendations</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <section id="landing-page" class="landing-page">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">K-Drama Recommender</h1>
+                <p class="hero-subtitle">Find your next k-drama based on<br>your personal tastes</p>
+                <button id="explore-btn" class="cta-button" onclick="scrollToRecommendations()">
+                    <span>Explore Dramas</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendation Page -->
+    <section id="recommendation-page" class="recommendation-page">
+        <header class="header">
+            <div class="container">
+                <h2 class="page-title">Find your next K-drama</h2>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="search-section">
+                <div class="search-box">
+                    <div style="display: flex; flex-direction: column; gap: 0;">
+                        <input type="text" id="dramaInput" placeholder="Type a drama you like..." autocomplete="off"/>
+                        <ul id="autocomplete-list" class="suggestions"></ul>
+                    </div>
+                    <button id="recommend-btn" class="recommend-button">See similars</button>
+                </div>
+            </div>
+
+            <div id="recommendations-container" class="recommendations-container">
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Searching perfect recommendations for you...</p>
+                </div>
+                
+                <div id="recommendations-grid" class="recommendations-grid"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>K-Drama Recommender</h3>
+                    <p>Your reliable source to find the kdramas that matches you</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                      <ul>
+    <li>
+      <a href="https://www.linkedin.com/in/priscillaleandro/"
+         target="_blank" rel="noopener noreferrer">Dev's LinkedIn</a>
+    </li>
+    <li>
+      <a href="https://github.com/priscillalea"
+         target="_blank" rel="noopener noreferrer">Dev's GitHub</a>
+    </li>
+  </ul>
+</div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 K-Drama Recommender. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- End of file: index.html -->
