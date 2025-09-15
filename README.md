@@ -3,6 +3,14 @@
 K-drama recommendation app powered by TF-IDF + cosine similarity (Flask backend) and a simple HTML/CSS/JS frontend.
 The dataset (`kdramas.csv`) was curated for **Brazilian** streaming availability.
 
+### Landing Page
+
+![Landing Screenshot](kdrama-recommender/Public/landing_kdramarec.PNG)
+
+### Search Page
+
+![Search Screenshot](kdrama-recommender/Public/search_kdrama.PNG)
+
 ---
 
 ## Table of Contents
@@ -92,7 +100,7 @@ python app.py
 
 - Open `static/index.html` in your browser, **or** serve the folder:
 
-```bash
+````bash
 # Option A (Python)
 cd static
 python -m http.server 5500
@@ -138,7 +146,7 @@ Returns recommended K-dramas similar to a given title.
     }
   ]
 }
-```
+````
 
 **Curl example**
 
