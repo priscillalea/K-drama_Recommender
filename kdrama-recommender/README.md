@@ -5,11 +5,11 @@ The dataset (`kdramas.csv`) was curated for **Brazilian** streaming availability
 
 ### Landing Page
 
-![Landing Screenshot](public/landing_kdramarec.PNG)
+![Landing Screenshot](Public/landing_kdramarec.PNG)
 
 ### Search Page
 
-![Search Screenshot](public/search_kdrama.PNG)
+![Search Screenshot](Public/search_kdrama.PNG)
 
 ---
 
